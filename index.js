@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch((err) => console.error(err));
 
 // Import product routes
-const productRoutes = require('./server/routes/products');
+const productRoutes = require('./routes/products');
 app.use('/api/products', productRoutes);
 
 // Start server
